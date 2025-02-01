@@ -1,0 +1,81 @@
+/* src/components/MovieList.css */
+.movie-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-item {
+    background-color: #1c2a3e;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+    position: relative;
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #01b4e4;
+  }
+  
+  .movie-content {
+    padding: 10px;
+  }
+  
+  .movie-title {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .movie-rating {
+    font-size: 0.8em;
+    color: #ffca28;
+  }
+  
+  .movie-overview {
+    font-size: 0.8em;
+    color: #b0bec5;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .movie-overview.expanded {
+    max-height: none;
+    white-space: normal;
+  }
+  
+  .movie-item button {
+    background-color: #01b4e4;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 6px 8px;
+    margin-top: 8px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .movie-item button:hover {
+    background-color: #029ec9;
+  }
+  
